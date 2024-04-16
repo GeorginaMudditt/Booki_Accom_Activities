@@ -1,0 +1,421 @@
+/* global css */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf) format('truetype');
+  font-display: swap;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Raleway;
+  padding: 15px 0px 15px 30px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Raleway;
+  padding: 30px 30px 20px 30px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Raleway;
+  padding-top: 10px;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: Raleway;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  font-family: Raleway;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+/* media queries css */
+
+/* check tech spec */
+
+@media all and (max-device-width: 480px) {
+  /* Add CSS rules for mobile phones here */
+}
+
+/* css - "intro" */
+
+.header {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav img {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.nav_links {
+  text-align: right;
+  padding-top: 60px;
+}
+
+.nav_links ul li {
+list-style: none;
+display: inline-block;
+padding: 0px 30px;
+position: relative;
+}
+
+.nav_links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: Raleway;
+}
+
+.nav_links ul li a:visited {
+  color: #0065FC;
+}
+
+.nav_links ul li a:hover {
+  color: #0065FC;
+  padding-top: 30px;
+  border-top: 1px solid #0065FC;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 20px 30px;
+  width: 25%;
+  height: 50px;
+  box-sizing: content-box;
+}
+
+/* I couldn't figure out how to get the border around the whole Search bar/form in the right place - below is a very long-winded way of putting required borders around each element*/
+
+form input {
+  font-family: Raleway;
+  font-size: 16px;
+  border-top: 3px solid #F2F2F2;
+  border-bottom: 3px solid #F2F2F2;
+  border-left: none;
+  border-right: none;
+}
+
+form button {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #0065FC;
+  border-top: 3px solid #F2F2F2;
+  border-top-right-radius: 10px;
+  border-bottom: 3px solid #F2F2F2;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+  border-right: 3px solid #F2F2F2;
+}
+
+form i {
+  background-color: #F2F2F2;
+  padding: 24px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#filters ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#filters h3 {
+  padding: 35px 20px 20px 30px;
+  font-size: 18px;
+}
+
+#criteria {
+  display: flex;
+  flex-direction: row;
+  font-family: Raleway;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#criteria li {
+  margin-right: 30px;
+  border: 3px solid #F2F2F2;
+  border-radius: 30px;
+  height: 60px;
+  padding: 0 20px 20px 0;
+}
+ /* The positioning is still not quite right - can see the grey border top left, but the blue circle should be overlapping */
+ /* Need to add a hover effect to the filter buttons */
+
+#criteria li i {
+  background-color: #DEEBFF;
+  padding: 20px;
+  border-radius: 50px;
+  overflow: visible;
+}
+
+/* css - "accommodation" */
+
+#accommodation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.accommodation-container {
+  width: 66%;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  margin: 0 20px 20px 20px;
+}
+
+ .accommodation-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+
+.accommodation-options a {
+  text-decoration: none;
+  color: black;
+}
+
+.accommodation-options img:hover {
+  filter: grayscale(100%);
+}
+
+.accommodation-card-text h3:hover, h4:hover {
+  color:#0065FC;
+}
+
+.accommodation-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid white;
+  border-radius: 10px;
+  align-content: center;
+  padding-bottom: 5px;
+  margin: 0 10px 20px 10px;
+}
+
+.accommodation-card img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.accommodation-card-text {
+  margin-left: 10px;
+}
+
+#auberge_la_cannebiere, #hotel_du_port, #les_mouettes, #hotel_de_la_mer, #auberge_le_panier, #hotel_chez_amina {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* css - "most popular" */
+
+.most-popular-container {
+  background-color: #F2F2F2;
+  width: 34%;
+  border-radius: 10px;
+  margin: 0 20px 20px 20px;
+  padding-right: 40px;
+}
+
+.most-popular-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.most-popular-options a {
+  text-decoration: none;
+  color: black;
+}
+
+.most-popular-options img:hover {
+  filter: grayscale(100%);
+}
+
+.most-popular-card-text h3:hover, h4:hover {
+  color:#0065FC;
+}
+
+.most-popular-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.most-popular-title i {
+  padding: 35px 0px 20px 30px;
+}
+
+.most-popular-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px 20px 20px;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.most-popular-card-text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.most-popular-card img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#morning_sun, #au_coeur_de_leau, #tout_bleu_et_blanc {
+  /* Why doesn;t Tout bleu et blanc look the same as the other two?? The photo size */
+  width: 180px;
+  height: 190px;
+  object-fit: cover; 
+}
+
+h2 a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+}
+
+h2 a:hover {
+  background-color: #0065FC;
+  color: #F2F2F2;
+}
+
+/* third section css - "activities" */
+
+.activities-container {
+  display: flex;
+  margin: 0 20px 20px 20px;
+}
+
+.activities-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.activities-card {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+}
+
+.activities-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.activities-card img:hover {
+  filter: grayscale(100%);
+}
+
+.activities-card h3:hover {
+  color: #0065FC;
+}
+
+.activities-card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.activities-card h3 {
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
+#old_port, #calanques_national_park {
+  width: 300px;
+  height: 490px;
+  object-fit: cover;
+}
+
+#pomegues_port {
+  width: 300px;
+  height: 260px;
+  object-fit: cover;
+}
+
+#frioul_island {
+  width: 300px;
+  height: 165px;
+  object-fit: cover;
+}
+
+#notre_dame, #longchamp_park {
+  width: 300px;
+  height: 212px;
+  object-fit: cover;
+}
+
+#calanques_national_park {
+  height: 86%; 
+}
+
+/* fourth section css - "footer" */
+
+.footer-flex-container {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-flex-container ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: Raleway;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footer-flex-container ul li a:hover {
+  color: #F2F2F2;
+  background-color:#0065FC;
+}
+
+.footer-column {
+  padding: 0 150px 20px 20px;
+}
+
+.footer-column ul li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}

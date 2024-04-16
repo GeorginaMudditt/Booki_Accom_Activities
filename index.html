@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Booki</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/booki.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a127163454.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Add the project header - Milestone 3 -->
+    <section class="nav">
+            <a href="#"><img src="images/logo/Booki.png" alt="Booki logo"></a>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="#accommodation">Accommodation</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                </ul>
+            </div>
+    </section>
+        
+    <section class="intro">
+        <h1>Find a place for your dream vacation</h1> 
+        <p>Downtown or in nature</p>
+    </section>
+
+<!-- Add the search form - Milestone 4 -->
+
+<form id="form" role="search">
+    <i class="fa-solid fa-location-dot fa-xl"></i>
+    <input type="search" placeholder="  Type here ..." aria-label="Search through site content">
+    <button>Search</button>
+</form>
+
+<!-- Add the filter part - Milestone 5 -->
+
+<section id="filters">
+    <ul>
+        <li><h3>Filters</h3></li>
+        <div id="criteria">
+            <li><i class="fa-solid fa-money-bill-wave" style="color:#0065FC;"></i>  Low cost</li>
+            <li><i class="fa-solid fa-child-reaching" style="color:#0065FC;"></i>  Family-friendly</li>
+            <li><i class="fa-solid fa-heart" style="color:#0065FC;"></i>  Romantic</li>
+            <li><i class="fa-solid fa-dog" style="color:#0065FC;"></i>  Pets allowed</li>
+        </div>
+    </ul>
+    <br>
+    <p><i class="fa-solid fa-circle-info" style="color:#0065FC"></i>  More than 500 accommodation options are available in this city</p>
+</section>
+
+<!-- Add the accommodation section - Milestone 6 -->
+    <section id="accommodation">
+        <div class="accommodation-container">
+            <div>
+                <h2 id="accommodation_title">Accommodation in Marseille</h2>
+            </div>
+            <div class="accommodation-options">
+                <a href="#">
+                <div class="accommodation-card">
+                    <img id="auberge_la_cannebiere" src="images/hebergements/4_small/auberge_la_cannebiere_s.jpg" alt="Photo of bedroom in Auberge la Cannebière">
+                    <div class="accommodation-card-text">
+                        <h3>Auberge la Cannebière</h3>
+                        <h4>Night starting at <strong>25€</strong></h4> <!-- Why aren't the strong or bold tags working here?-->
+                            <div class="stars"> <!-- Is there a more conscise way to do these stars? I could not find a row of five stars as one icon on Font Awesome (free version anyway)-->
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </a>
+                </div>
+
+                <a href="#">
+                <div class="accommodation-card">
+                    <img id="hotel_du_port" src="images/hebergements/4_small/hotel_du_port_s.jpg" alt="Photo of bedroom in Hôtel du port">
+                    <div class="accommodation-card-text">
+                        <h3>Hôtel du port</h3>
+                        <h4>Night starting at 52€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </a>
+                </div>
+
+                <a href="#">
+                <div class="accommodation-card">
+                    <img id="les_mouettes" src="images/hebergements/4_small/les_mouettes_s.jpg" alt="Photo of bedroom in Les mouettes Hotel">
+                    <div class="accommodation-card-text">
+                        <h3>Les mouettes Hotel</h3>
+                        <h4>Night starting at 76€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </a>
+                </div>
+
+                <a href="#">
+                <div class="accommodation-card">
+                    <img id="hotel_de_la_mer" src="images/hebergements/4_small/hotel_de_la_mer_s.jpg" alt="Photo of bedroom in Hôtel de la mer">
+                    <div class="accommodation-card-text">
+                        <h3>Hôtel de la mer</h3>
+                        <h4>Night starting at 46€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </a>
+                </div>
+
+                <a href="#">
+                <div class="accommodation-card">
+                    <img id="auberge_le_panier" src="images/hebergements/4_small/auberge_le_panier_s.jpg" alt="Photo of bedroom in Auberge Le Panier">
+                    <div class="accommodation-card-text">
+                        <h3>Auberge Le Panier</h3>
+                        <h4>Night starting at 23€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </a>
+                </div>
+
+                <a href="#">
+                <div class="accommodation-card">
+                    <img id="hotel_chez_amina" src="images/hebergements/4_small/hotel_chez_amina_s.jpg" alt="Photo of bedroom in Hôtel chez Amina">
+                    <div class="accommodation-card-text">
+                        <h3>Hôtel chez Amina</h3>
+                        <h4>Night starting at 96€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+
+            <div>
+                <h2><a href="#">Show More</a></h2></div>
+            </div>
+    
+<!-- Add the "Most popular" card - Milestone 7 -->
+    
+        <div class="most-popular-container">
+            <div class="most-popular-title">
+                <h2>Most Popular</h2>
+                <i class="fa-solid fa-star fa-xl"></i>
+            </div>
+            <div class="most-popular-options">
+
+                <a href="#">
+                <div class="most-popular-card">
+                    <img id="morning_sun" src="images/hebergements/4_small/morning_sun_s.jpg" alt="Photo of bedroom in Morning Sun Hotel">
+                    <div class="most-popular-card-text">
+                        <h3>Morning Sun Hotel</h3>
+                        <h4>Night starting at 128€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href ="#">
+                <div class="most-popular-card">
+                    <img id="au_coeur_de_leau" src="images/hebergements/4_small/au_coeur_de_l'eau_s.jpg" alt="Photo of bedroom in Au coeur de l'eau Bed and Breakfast">
+                    <div class="most-popular-card-text">
+                        <h3>Au coeur de l'eau Bed and Breakfast</h3>
+                        <h4>Night starting at 71€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </div>
+                </a>
+
+                <a href="#">
+                <div class="most-popular-card">
+                    <img id="tout_bleu_et_blanc" src="images/hebergements/4_small/tout_bleu_et_blanc_s.jpg" alt="Photo of bedroom in Tout bleu et blanc Hotel">
+                    <div class="most-popular-card-text">
+                        <h3>Tout bleu et blanc Hotel</h3>
+                        <h4>Night starting at 68€</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                            </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add the "Activities in Marseille" section - Milestone 9 -->
+    <section id="activities">
+        <h1 id="activities">Activities in Marseille</h1>
+        <div class="activities-container">
+            <div class="activities-column">
+                <a href="#">
+                <div class="activities-card">
+                    <img id="old_port" src="images/activites/4_small/old_port_s.jpg" alt="Photo of Old Port">
+                    <h3>Old Port</h3>
+                </a>
+                </div>
+            </div>
+            <div class="activities-column-double">
+                <a href="#">
+                <div class="activities-card">
+                    <img id="pomegues_port" src="images/activites/4_small/pomegues_fort_s.jpg" alt="Photo of Pomègues Port">
+                    <h3>Pomègues Port</h3>
+                </a>
+                </div>
+                <a href="#">
+                <div class="activities-card">
+                    <img id="frioul_island" src="images/activites/4_small/frioul_island_s.jpg" alt="Photo of Frioul Island">
+                    <h3>Frioul Island</h3>
+                </a>
+                </div>
+            </div>
+            <div class="activities-column">
+                <a href="#">
+                <div class="activities-card">
+                    <img id="calanques_national_park" src="images/activites/4_small/calanques_s.jpg" alt="Photo of Calanques National Park">
+                    <h3>Calanques National Park</h3>
+                </a>
+                </div>
+            </div>
+            <div class="activities-column-double">
+                <a href="#">
+                <div class="activities-card">
+                    <img id="notre_dame" src="images/activites/4_small/notre_dame_s.jpg" alt="Photo of Notre Dame de la Garde">
+                    <h3>Notre Dame de la Garde</h3>
+                </a>
+                </div>
+                <a href="#">
+                <div class="activities-card">
+                    <img id="longchamp_park" src="images/activites/4_small/longchamp_park_s.jpg" alt="Photo of Longchamp Park">
+                    <h3>Longchamp Park</h3>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        </section class="footer">
+            <div class="footer-flex-container">
+                <div class="footer-column">
+                    <h2>About</h2>
+                    <ul>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">General Terms and Conditions</a></li>
+                        <li><a href="#">Data and Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Our Accommodation</h2>
+                    <ul>
+                        <li><a href="#">Quality Assessment</a></li>
+                        <li><a href="#">List Your Hotel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Assistance</h2>
+                    <ul>
+                        <li><a href="#">Help Desk</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
