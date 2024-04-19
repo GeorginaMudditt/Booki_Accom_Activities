@@ -104,17 +104,19 @@ form {
   display: flex;
   flex-direction: row;
   margin: 10px 0 20px 30px;
-  width: 25%;
+  width: 30%;
   height: 50px;
   box-sizing: content-box;
   border: 3px solid #F2F2F2; 
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
 form input {
   font-family: Raleway;
   font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
   border: none;
   min-width: 0;
   flex: 1;
@@ -127,6 +129,7 @@ form button {
   color: white;
   background-color: #0065FC;
   min-width: 0;
+  width: 20%;
   border: none;
 }
 
@@ -136,17 +139,17 @@ form i {
   min-width: 0;
 }
 
-#filters ul {
+.filters ul {
   display: flex;
   flex-direction: row;
 }
 
-#filters h3 {
+.filters h3 {
   padding: 35px 20px 20px 30px;
   font-size: 18px;
 }
 
-#criteria {
+.criteria {
   display: flex;
   flex-direction: row;
   font-family: Raleway;
@@ -154,7 +157,7 @@ form i {
   padding: 10px;
 }
 
-#criteria li {
+.criteria li {
   margin-right: 30px;
   border: 3px solid #F2F2F2;
   border-radius: 30px;
@@ -163,16 +166,17 @@ form i {
 }
  /* The positioning is still not quite right - can see the grey border top left, but the blue circle should be overlapping */
 
- #criteria li a {
+ .criteria li a {
   text-decoration: none;
   color: black;
  }
 
- #criteria li:hover {
+ .criteria li:hover {
   background-color: #DEEBFF;
  }
 
-#criteria li i {
+.criteria li i {
+  color:#0065FC;
   background-color: #DEEBFF;
   padding: 20px;
   border-radius: 50px;
@@ -190,7 +194,7 @@ form i {
 .accommodation-container {
   width: 66%;
   background-color: #F2F2F2;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0 20px 20px 20px;
 }
 
@@ -221,15 +225,12 @@ form i {
   display: flex;
   flex-direction: column;
   border: 3px solid white;
-  border-radius: 10px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
   align-content: center;
   padding-bottom: 5px;
   margin: 0 10px 20px 10px;
-}
-
-.accommodation-card img {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 
 .accommodation-card-text {
@@ -247,7 +248,7 @@ form i {
 .most-popular-container {
   background-color: #F2F2F2;
   width: 34%;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0 20px 20px 20px;
   padding-right: 40px;
 }
@@ -287,7 +288,9 @@ form i {
   flex-direction: row;
   margin: 0 20px 20px 20px;
   border: 3px solid white;
-  border-radius: 10px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .most-popular-card-text {
@@ -296,11 +299,6 @@ form i {
   width: 80%;
   margin-right: 20px;
   padding: 20px;
-}
-
-.most-popular-card img {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 #morning_sun, #au_coeur_de_leau, #tout_bleu_et_blanc {
