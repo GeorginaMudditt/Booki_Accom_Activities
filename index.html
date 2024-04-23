@@ -8,6 +8,7 @@
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/normalise.css" type="text/css" rel="stylesheet">
     <link href="css/booki.css" type="text/css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a127163454.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,7 +16,7 @@
 <!-- Add the project header - Milestone 3 -->
 <header>
     <section class="nav">
-            <a href="#"><img src="images/logo/Booki.png" alt="Booki logo"></a>
+            <a href="#"><img id="booki_log" src="images/logo/Booki.png" alt="Booki logo"></a>
             <div class="nav_links">
                 <ul>
                     <li><a href="#accommodation">Accommodation</a></li>
@@ -43,20 +44,20 @@
     <ul>
         <li><h3>Filters</h3></li>
         <div class="criteria">
-            <li><i class="fa-solid fa-money-bill-wave"></i>  Low cost</li>
-            <li><i class="fa-solid fa-child-reaching"></i>  Family-friendly</li>
-            <li><i class="fa-solid fa-heart"></i>  Romantic</li>
-            <li><i class="fa-solid fa-dog"></i>  Pets allowed</li>
+            <li><i class="fa-solid fa-money-bill-wave"></i>Low cost</li>
+            <li><i class="fa-solid fa-child-reaching"></i>Family-friendly</li>
+            <li><i class="fa-solid fa-heart"></i>Romantic</li>
+            <li><i class="fa-solid fa-dog"></i>Pets allowed</li>
         </div>
     </ul>
     <br>
-    <p><i class="fa-solid fa-circle-info" style="color:#0065FC"></i>  More than 500 accommodation options are available in this city</p>
+    <p><i class="fa-solid fa-circle-info"></i>  More than 500 accommodation options are available in this city</p>
 </section>
 </header>
 
 <!-- Add the accommodation section - Milestone 6 -->
 <main>
-    <section id="accommodation">
+    <section class="accommodation">
         <div class="accommodation-container">
             <div>
                 <h2 id="accommodation_title">Accommodation in Marseille</h2>
@@ -69,11 +70,11 @@
                         <h3>Auberge la Cannebière</h3>
                         <h4>Night starting at <b>25€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
                 </a>
@@ -86,11 +87,11 @@
                         <h3>Hôtel du port</h3>
                         <h4>Night starting at <b>52€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
                             </div>
                     </div>
                 </a>
@@ -103,11 +104,11 @@
                         <h3>Les mouettes Hotel</h3>
                         <h4>Night starting at <b>76€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
                 </a>
@@ -120,11 +121,11 @@
                         <h3>Hôtel de la mer</h3>
                         <h4>Night starting at <b>46€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
-                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-empty"></i>
+                                <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
                 </a>
@@ -137,11 +138,11 @@
                         <h3>Auberge Le Panier</h3>
                         <h4>Night starting at <b>23€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
                 </a>
@@ -154,11 +155,11 @@
                         <h3>Hôtel chez Amina</h3>
                         <h4>Night starting at <b>96€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
                             </div>
                     </div>
                 </a>
@@ -185,11 +186,11 @@
                         <h3>Morning Sun Hotel</h3>
                         <h4>Night starting at <b>128€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
                             </div>
                     </div>
                 </div>
@@ -202,11 +203,11 @@
                         <h3>Au coeur de l'eau Bed and Breakfast</h3>
                         <h4>Night starting at <b>71€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
                 </div>
@@ -219,11 +220,11 @@
                         <h3>Tout bleu et blanc Hotel</h3>
                         <h4>Night starting at <b>68€</b></h4>
                             <div class="stars">
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-solid fa-star" style="color:#0065FC"></i>
-                                <i class="fa-regular fa-star" style="color:#0065FC"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-full"></i>
+                                <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
                 </div>
@@ -233,8 +234,8 @@
     </section>
 
     <!-- Add the "Activities in Marseille" section - Milestone 9 -->
-    <section id="activities">
-        <h1 id="activities">Activities in Marseille</h1>
+    <section class="activities">
+        <h1 id="activities-title">Activities in Marseille</h1>
         <div class="activities-container">
             <div class="activities-column">
                 <a href="#">

@@ -48,6 +48,14 @@ p {
   padding-bottom: 15px;
 }
 
+.star-full {
+  color:#0065FC;
+}
+
+.star-empty {
+  color:#F2F2F2;
+}
+
 /* media queries css */
 
 /* check tech spec */
@@ -164,6 +172,11 @@ form i {
   height: 60px;
   padding: 0 20px 20px 0;
 }
+
+.filters p i {
+  color:#0065FC
+}
+
  /* The positioning is still not quite right - can see the grey border top left, but the blue circle should be overlapping */
 
  .criteria li a {
@@ -185,7 +198,7 @@ form i {
 
 /* css - "accommodation" */
 
-#accommodation {
+.accommodation {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
