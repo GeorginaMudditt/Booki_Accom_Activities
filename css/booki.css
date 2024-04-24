@@ -24,7 +24,7 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   font-family: Raleway;
-  padding: 30px 30px 20px 30px;
+  padding: 30px;
 }
 
 h3 {
@@ -55,12 +55,6 @@ p {
 .star-empty {
   color:#F2F2F2;
 }
-
-/* media queries css */
-
-/* check tech spec */
-
-/* Add CSS rules for mobile phones here */
 
 /* css - "intro" */
 
@@ -150,6 +144,7 @@ form i {
 .filters ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .filters h3 {
@@ -160,8 +155,10 @@ form i {
 .criteria {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-family: Raleway;
   font-size: 18px;
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -173,15 +170,10 @@ form i {
   padding: 0 20px 20px 0;
 }
 
-.filters p i {
-  color:#0065FC
-}
-
- /* The positioning is still not quite right - can see the grey border top left, but the blue circle should be overlapping */
-
  .criteria li a {
   text-decoration: none;
   color: black;
+  text-align: end;
  }
 
  .criteria li:hover {
@@ -194,6 +186,10 @@ form i {
   padding: 20px;
   border-radius: 50px;
   overflow: visible;
+}
+
+.filters p i {
+  color:#0065FC
 }
 
 /* css - "accommodation" */
@@ -269,7 +265,7 @@ form i {
 .most-popular-options {
   display: flex;
   flex-direction: column;
-  height: 33%;
+  /* height: 33%; */
 }
 
 .most-popular-options a {
@@ -297,6 +293,7 @@ form i {
 
 .most-popular-card {
   width: 100%;
+  height: 180px;
   display: flex;
   flex-direction: row;
   margin: 0 20px 20px 20px;
@@ -315,7 +312,6 @@ form i {
 }
 
 #morning_sun, #au_coeur_de_leau, #tout_bleu_et_blanc {
-  /* Why doesn;t Tout bleu et blanc look the same as the other two?? The photo size */
   width: 35%;
   max-width: 250px;
   min-width: 200px;
@@ -343,6 +339,7 @@ h2 a:hover {
 .activities-container {
   display: flex;
   margin: 0 20px 20px 20px;
+  justify-content: space-around;
 }
 
 .activities-column {
@@ -438,4 +435,60 @@ h2 a:hover {
   margin-left: 10px;
   margin-bottom: 10px;
   padding-left: 15px;
+}
+/* media queries css - tablet */
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+
+}
+
+/* media queries css - phone */
+
+@media all and (max-width: 768px) {
+  body {
+    min-width: 320px; 
+  }
+  #booki_log {
+    width: 200px;
+    /* no idea why this img is so small here */
+    /* can't figure out how to center the logo */
+  }
+  .nav_links ul {
+    display: flex ;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+  }
+  .nav_links ul li:hover {
+    border-top: none; /* cannot work out why the top border is still showing */
+    border-bottom: 1px solid #0065FC;
+    padding-bottom: 30px;
+  }
+  #form {
+    width: 80%;
+  }
+  /* From the milestones guide: "Be careful with the style of the search bar: on desktop the search
+  button contains the text “search” whereas on mobile there is only a
+  symbol of a magnifying glass" Is is possible to do this as a media query in CSS only? Surely we need to put something in HTML as the elements are different (i.e. one text, one image) */
+
+  .criteria li {
+    margin-bottom: 20px;
+  }
+
+  /* "Most Popular" block needs to be positioned above "Accommodation in Marseille" */
+
+  .most-popular-container {
+    border-radius: 0%;
+  }
+
+  .accommodation-card {
+    display:block;
+    margin: 30px auto;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .accommodation-container {
+    background-color: white;
+  }
+ /* Acivities all need to be repositioned so they stack one on top of each other */
+   
 }
