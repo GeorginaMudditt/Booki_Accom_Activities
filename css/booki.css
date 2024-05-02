@@ -18,6 +18,7 @@ h1 {
   font-weight: bold;
   font-family: Raleway;
   padding: 15px 0px 15px 30px;
+  line-height: 1.5;
 }
 
 h2 {
@@ -46,6 +47,7 @@ p {
   font-family: Raleway;
   padding-left: 30px;
   padding-bottom: 15px;
+  line-height: 1.5;
 }
 
 .star-full {
@@ -68,7 +70,7 @@ p {
   justify-content: space-between;
 }
 
-.nav img {
+#booki_logo {
   width: 250px;
   margin-left: 20px;
 }
@@ -105,16 +107,22 @@ position: relative;
 form {
   display: flex;
   flex-direction: row;
-  margin: 10px 0 20px 30px;
-  width: 30%;
   height: 50px;
-  box-sizing: content-box;
-  border: 3px solid #F2F2F2; 
+  width: 40%;
+  border: 3px solid #F2F2F2;
   border-radius: 20px;
   overflow: hidden;
+  box-sizing: content-box;
+  margin: 10px 0 20px 30px;
 }
 
-form input {
+.location-dot {
+  background-color: #F2F2F2;
+  border: none;
+  width: 10%;
+}
+
+form input { /* How do you change the colour of the placeholder text here? */
   font-family: Raleway;
   font-size: 16px;
   font-weight: bold;
@@ -124,21 +132,25 @@ form input {
   flex: 1;
 }
 
-form button {
+.search-button {
   font-family: Raleway;
   font-size: 16px;
   font-weight: bold;
   color: white;
   background-color: #0065FC;
-  min-width: 0;
-  width: 20%;
   border: none;
+  width: 20%;
 }
 
-form i {
-  background-color: #F2F2F2;
-  padding: 24px;
-  min-width: 0;
+.mobile-search-button {
+  color: white;
+  background-color: #0065FC;
+  border: none;
+  border-radius: 15px;
+  width: 10%;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .filters ul {
@@ -192,6 +204,23 @@ form i {
   color:#0065FC
 }
 
+.extra-info {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.fa-circle-info {
+  color: #0065FC;
+  align-content: center;
+}
+
+.extra-info p {
+  padding: 5px 0 0 10px;
+}
+
 /* css - "accommodation" */
 
 .accommodation {
@@ -233,7 +262,7 @@ form i {
   max-width: 350px;
   display: flex;
   flex-direction: column;
-  border: 3px solid white;
+  border: 5px solid white;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
@@ -297,7 +326,7 @@ form i {
   display: flex;
   flex-direction: row;
   margin: 0 20px 20px 20px;
-  border: 3px solid white;
+  border: 5px solid white;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
@@ -314,7 +343,7 @@ form i {
 #morning_sun, #au_coeur_de_leau, #tout_bleu_et_blanc {
   width: 35%;
   max-width: 250px;
-  min-width: 200px;
+  min-width: 150px;
   object-fit: cover; 
 }
 
@@ -448,46 +477,98 @@ h2 a:hover {
   body {
     min-width: 320px; 
   }
-  #booki_log {
-    width: 200px;
-    /* no idea why this img is so small here */
-    /* can't figure out how to center the logo */
+  /* changes to the header on mobile: logo on top of links, blue line below instead of above when links are hovered, magnifying glass on search bar instead of the word "Search" */
+  #booki_logo {
+    width: 150px;
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #F2F2F2;
+  }
+  .nav_links {
+    padding: 20px 0;
+    width: 100%;
   }
   .nav_links ul {
     display: flex ;
     flex-direction: row;
-    /* justify-content: flex-end; */
   }
-  .nav_links ul li:hover {
-    border-top: none; /* cannot work out why the top border is still showing */
-    border-bottom: 1px solid #0065FC;
-    padding-bottom: 30px;
+  .nav_links ul li {
+    padding: 0 50px;
+  }
+  .nav_links ul li a {
+    font-size: 20px;
+  }
+  .nav_links ul li a:hover { /* I want the bottom border here to strech to the end of the grey line (i.e. 50% of the grey line is bue when hovered) */
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
+    padding-bottom: 20px;
+  }
+  .intro h1 {
+    padding-left: 30px;
   }
   #form {
     width: 80%;
   }
-  /* From the milestones guide: "Be careful with the style of the search bar: on desktop the search
-  button contains the text “search” whereas on mobile there is only a
-  symbol of a magnifying glass" Is is possible to do this as a media query in CSS only? Surely we need to put something in HTML as the elements are different (i.e. one text, one image) */
-
+  .search-button {
+    display: none;
+  }
+  .mobile-search-button {
+    display: flex;
+}
   .criteria li {
     margin-bottom: 20px;
   }
 
-  /* "Most Popular" block needs to be positioned above "Accommodation in Marseille" */
-
+  /* changes to the first and second parts of the website on mobile: hotels stacked vertically, most popular hotels on top of others, 6 hotels background changes to white */
+  .accommodation {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    order: 1;
+}
   .most-popular-container {
     border-radius: 0%;
+    width: 100%;
+    margin: 20px 0;
   }
-
+  .most-popular-title h2 {
+    font-size: 30px;
+  }
+  .most-popular-card {
+    margin:
+  }
+  .accommodation-options {
+    justify-content: flex-start;
+  }
+  .accommodation-container h2 {
+    font-size: 20px;
+    padding: 0;
+  }
   .accommodation-card {
     display:block;
-    margin: 30px auto;
+    margin: 0 30px 30px 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    max-width: 450px;
   }
   .accommodation-container {
     background-color: white;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+  }
+  #accommodation_title {
+    font-size: 30px;
+    justify-content: center;
+  }
+  #activities-title {
+    font-size: 30px;
+
   }
  /* Acivities all need to be repositioned so they stack one on top of each other */
    

@@ -13,10 +13,10 @@
 </head>
 
 <body>
-<!-- Add the project header - Milestone 3 -->
+<!-- First part of header: logo, links, heading & sub-heading -->
 <header>
     <section class="nav">
-            <a href="#"><img id="booki_log" src="images/logo/Booki.png" alt="Booki logo"></a>
+            <a href="#"><img id="booki_logo" src="images/logo/Booki.png" alt="Booki logo"></a>
             <div class="nav_links">
                 <ul>
                     <li><a href="#accommodation">Accommodation</a></li>
@@ -24,22 +24,22 @@
                 </ul>
             </div>
     </section>
-        
     <section class="intro">
         <h1>Find a place for your dream vacation</h1> 
         <p>Downtown or in nature</p>
     </section>
 
-<!-- Add the search form - Milestone 4 -->
+<!-- Second part of header: search form -->
+<section class="search-form">
+    <form id="form" role="search">
+        <button class="location-dot" type="button"><i class="fa-solid fa-location-dot fa-lg"></i></button>
+        <input type="search" placeholder="Marseille, France" aria-label="Search through site content">
+        <button class="search-button" type="button">Search</button>
+        <button class="mobile-search-button" type="button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+    </form>
+</section>
 
-<form id="form" role="search">
-    <i class="fa-solid fa-location-dot fa-xl"></i>
-    <input type="search" placeholder="  Type here ..." aria-label="Search through site content">
-    <button>Search</button>
-</form>
-
-<!-- Add the filter part - Milestone 5 -->
-
+<!-- Third part of header: filters -->
 <section class="filters">
     <ul>
         <li><h3>Filters</h3></li>
@@ -50,12 +50,14 @@
             <li><i class="fa-solid fa-dog"></i> Pets allowed</li>
         </div>
     </ul>
-    <br>
-    <p><i class="fa-solid fa-circle-info"></i>  More than 500 accommodation options are available in this city</p>
+    <div class="extra-info">
+        <i class="fa-solid fa-circle-info fa-xl"></i>
+        <p>More than 500 accommodation options are available in this city</p>
+    </div>
 </section>
 </header>
 
-<!-- Add the accommodation section - Milestone 6 -->
+<!-- First part of the main website: 6 accommodation options in Marseille -->
 <main>
     <section class="accommodation">
         <div class="accommodation-container">
@@ -84,7 +86,7 @@
                 <div class="accommodation-card">
                     <img id="hotel_du_port" src="images/hebergements/4_small/hotel_du_port_s.jpg" alt="Photo of bedroom in Hôtel du port">
                     <div class="accommodation-card-text">
-                        <h3>Hôtel du port</h3>
+                        <h3>Hôtel du Port</h3>
                         <h4>Night starting at <b>52€</b></h4>
                             <div class="stars">
                                 <i class="fa-solid fa-star star-full"></i>
@@ -101,7 +103,7 @@
                 <div class="accommodation-card">
                     <img id="les_mouettes" src="images/hebergements/4_small/les_mouettes_s.jpg" alt="Photo of bedroom in Les mouettes Hotel">
                     <div class="accommodation-card-text">
-                        <h3>Les mouettes Hotel</h3>
+                        <h3>Les Mouettes Hotel</h3>
                         <h4>Night starting at <b>76€</b></h4>
                             <div class="stars">
                                 <i class="fa-solid fa-star star-full"></i>
@@ -118,7 +120,7 @@
                 <div class="accommodation-card">
                     <img id="hotel_de_la_mer" src="images/hebergements/4_small/hotel_de_la_mer_s.jpg" alt="Photo of bedroom in Hôtel de la mer">
                     <div class="accommodation-card-text">
-                        <h3>Hôtel de la mer</h3>
+                        <h3>Hôtel de la Mer</h3>
                         <h4>Night starting at <b>46€</b></h4>
                             <div class="stars">
                                 <i class="fa-solid fa-star star-full"></i>
@@ -170,7 +172,7 @@
                 <h2><a href="#">Show More</a></h2></div>
             </div>
     
-<!-- Add the "Most popular" card - Milestone 7 -->
+<!-- Second part of the main website - to the side of the first on desktop: 3 of the most popular hotels in Marseille -->
     
         <div class="most-popular-container">
             <div class="most-popular-title">
@@ -199,7 +201,7 @@
                 <div class="most-popular-card">
                     <img id="au_coeur_de_leau" src="images/hebergements/4_small/au_coeur_de_l'eau_s.jpg" alt="Photo of bedroom in Au coeur de l'eau Bed and Breakfast">
                     <div class="most-popular-card-text">
-                        <h3>Au coeur de l'eau Bed and Breakfast</h3>
+                        <h3>Au Coeur de L'eau Bed and Breakfast</h3>
                         <h4>Night starting at <b>71€</b></h4>
                             <div class="stars">
                                 <i class="fa-solid fa-star star-full"></i>
@@ -216,7 +218,7 @@
                 <div class="most-popular-card">
                     <img id="tout_bleu_et_blanc" src="images/hebergements/4_small/tout_bleu_et_blanc_s.jpg" alt="Photo of bedroom in Tout bleu et blanc Hotel">
                     <div class="most-popular-card-text">
-                        <h3>Tout bleu et blanc Hotel</h3>
+                        <h3>Tout Bleu et Blanc Hotel</h3>
                         <h4>Night starting at <b>68€</b></h4>
                             <div class="stars">
                                 <i class="fa-solid fa-star star-full"></i>
@@ -232,7 +234,7 @@
         </div>
     </section>
 
-    <!-- Add the "Activities in Marseille" section - Milestone 9 -->
+    <!-- Third part of the main website - under the other two on desktop: 6 activities/destinations in Marseille -->
     <section class="activities">
         <h1 id="activities-title">Activities in Marseille</h1>
         <div class="activities-container">
