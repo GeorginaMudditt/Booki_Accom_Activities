@@ -122,7 +122,7 @@ form {
   width: 10%;
 }
 
-form input { /* How do you change the colour of the placeholder text here? */
+form input { 
   font-family: Raleway;
   font-size: 16px;
   font-weight: bold;
@@ -130,6 +130,10 @@ form input { /* How do you change the colour of the placeholder text here? */
   border: none;
   min-width: 0;
   flex: 1;
+}
+
+::placeholder {
+  color: black;
 }
 
 .search-button {
@@ -294,7 +298,6 @@ form input { /* How do you change the colour of the placeholder text here? */
 .most-popular-options {
   display: flex;
   flex-direction: column;
-  /* height: 33%; */
 }
 
 .most-popular-options a {
@@ -469,6 +472,26 @@ h2 a:hover {
 
 @media all and (min-width: 769px) and (max-width: 991px) {
 
+  .accommodation-options {
+    justify-content: flex-start;
+  }
+
+  .most-popular-card {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+  }
+
+  #morning_sun, #au_coeur_de_leau, #tout_bleu_et_blanc {
+    width: 100%;
+    max-width: 400px;
+    height: 40%;
+    object-fit: cover;
+  }
+
+  .most-popular-card-text h3 {
+    padding-top: 0;
+  }
 }
 
 /* media queries css - phone */
@@ -477,45 +500,57 @@ h2 a:hover {
   body {
     min-width: 320px; 
   }
+
   /* changes to the header on mobile: logo on top of links, blue line below instead of above when links are hovered, magnifying glass on search bar instead of the word "Search" */
+
   #booki_logo {
     width: 150px;
     display: flex;
   }
+
   .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 3px solid #F2F2F2;
   }
+
   .nav_links {
     padding: 20px 0;
     width: 100%;
   }
+
   .nav_links ul {
     display: flex ;
     flex-direction: row;
   }
+
   .nav_links ul li {
     padding: 0 50px;
   }
+
   .nav_links ul li a {
     font-size: 20px;
   }
+
   .nav_links ul li a:hover { /* I want the bottom border here to strech to the end of the grey line (i.e. 50% of the grey line is bue when hovered) */
     border-bottom: 3px solid #0065FC;
     border-top: none;
     padding-bottom: 20px;
   }
+
   .intro h1 {
     padding-left: 30px;
   }
+
   #form {
     width: 80%;
   }
+
   .search-button {
     display: none;
   }
+
   .mobile-search-button {
     display: flex;
 }
@@ -523,31 +558,38 @@ h2 a:hover {
     margin-bottom: 20px;
   }
 
-  /* changes to the first and second parts of the website on mobile: hotels stacked vertically, most popular hotels on top of others, 6 hotels background changes to white */
+  /* changes to the first and second main parts of the website on mobile: hotels stacked vertically, most popular hotels on top of others, 6 hotels background changes to white */
+
   .accommodation {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
     order: 1;
 }
+
   .most-popular-container {
     border-radius: 0%;
     width: 100%;
     margin: 20px 0;
   }
+
   .most-popular-title h2 {
     font-size: 30px;
   }
+
   .most-popular-card {
     margin:
   }
+
   .accommodation-options {
     justify-content: flex-start;
   }
+
   .accommodation-container h2 {
     font-size: 20px;
     padding: 0;
   }
+
   .accommodation-card {
     display:block;
     margin: 0 30px 30px 10px;
@@ -556,20 +598,41 @@ h2 a:hover {
     width: 100%;
     max-width: 450px;
   }
+
   .accommodation-container {
     background-color: white;
     width: 100%; 
     justify-content: center;
     align-items: center;
   }
+
   #accommodation_title {
     font-size: 30px;
     justify-content: center;
+    padding: 40px 0;
   }
+
   #activities-title {
     font-size: 30px;
 
   }
- /* Acivities all need to be repositioned so they stack one on top of each other */
+ /* changes to the  */
    
+ .activities-container {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .activities-card {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  margin: 20px;
+ }
+
+ #old_port, #pomegues_port, #frioul_island, #calanques_national_park, #notre_dame, #longchamp_park {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+ }
 }
