@@ -243,9 +243,7 @@ form input {
  .accommodation-options {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-evenly;
-}
+ }
 
 .accommodation-options a {
   text-decoration: none;
@@ -512,7 +510,6 @@ h2 a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 3px solid #F2F2F2;
   }
 
   .nav_links {
@@ -523,20 +520,25 @@ h2 a:hover {
   .nav_links ul {
     display: flex ;
     flex-direction: row;
+    border-bottom: 3px solid #F2F2F2;
   }
 
   .nav_links ul li {
-    padding: 0 50px;
+    padding: 20px 50px;
+    width: 50%;
   }
 
   .nav_links ul li a {
     font-size: 20px;
   }
 
-  .nav_links ul li a:hover { /* I want the bottom border here to strech to the end of the grey line (i.e. 50% of the grey line is bue when hovered) */
+  .nav_links ul li:hover {
     border-bottom: 3px solid #0065FC;
-    border-top: none;
     padding-bottom: 20px;
+  }
+
+  .nav_links ul li a:hover {
+    border-top: 0;
   }
 
   .intro h1 {
@@ -558,6 +560,15 @@ h2 a:hover {
     margin-bottom: 20px;
   }
 
+  #romantic-button {
+    order: -1;
+  }
+
+  #low-cost-button {
+    order: -2;
+
+  }
+
   /* changes to the first and second main parts of the website on mobile: hotels stacked vertically, most popular hotels on top of others, 6 hotels background changes to white */
 
   .accommodation {
@@ -575,10 +586,6 @@ h2 a:hover {
 
   .most-popular-title h2 {
     font-size: 30px;
-  }
-
-  .most-popular-card {
-    margin:
   }
 
   .accommodation-options {
