@@ -26,6 +26,7 @@ h2 {
   font-weight: bold;
   font-family: Raleway;
   padding: 30px;
+  border: 5px solid red;
 }
 
 h3 {
