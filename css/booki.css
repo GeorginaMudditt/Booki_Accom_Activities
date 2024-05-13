@@ -178,14 +178,6 @@ form input {
   padding: 10px;
 }
 
-/* .criteria li {
-  margin-right: 30px;
-  border: 3px solid #F2F2F2;
-  border-radius: 30px;
-  height: 60px;
-  padding: 0 20px 20px 0;
-} */
-
 .criteria p {
   margin-right: 30px;
   border: 3px solid #F2F2F2;
@@ -194,33 +186,15 @@ form input {
   padding: 0 20px 20px 0;
 }
 
- /* .criteria li a {
-  text-decoration: none;
-  color: black;
-  text-align: end;
- } */
-
  .criteria p a {
   text-decoration: none;
   color: black;
   text-align: end;
  }
 
- /* .criteria li:hover {
-  background-color: #DEEBFF;
- } */
-
  .criteria p:hover {
   background-color: #DEEBFF;
  }
-
-/* .criteria li i {
-  color:#0065FC;
-  background-color: #DEEBFF;
-  padding: 20px;
-  border-radius: 50px;
-  overflow: visible;
-} */
 
 .criteria p i {
   color:#0065FC;
@@ -649,7 +623,7 @@ h2 a:hover {
     font-size: 30px;
 
   }
- /* changes to the  */
+ /* changes to the activities section: activities stacked vertically */
    
  .activities-container {
   display: flex;
