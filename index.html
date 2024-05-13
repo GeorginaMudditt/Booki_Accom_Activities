@@ -30,31 +30,29 @@
     </section>
 
 <!-- Second part of header: search form -->
-<section class="search-form">
-    <form id="form" role="search">
-        <button class="location-dot" type="button"><i class="fa-solid fa-location-dot fa-lg"></i></button>
-        <input type="search" placeholder="Marseille, France" aria-label="Search through site content">
-        <button class="search-button" type="button">Search</button>
-        <button class="mobile-search-button" type="button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-    </form>
-</section>
+    <section class="search-form">
+        <form id="form" role="search">
+            <button class="location-dot" type="button"><i class="fa-solid fa-location-dot fa-lg"></i></button>
+            <input type="search" placeholder="Marseille, France" aria-label="Search through site content">
+            <button class="search-button" type="button">Search</button>
+            <button class="mobile-search-button" type="button"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+        </form>
+    </section>
 
 <!-- Third part of header: filters -->
-<section class="filters">
-    <ul>
-        <li><h3>Filters</h3></li>
-        <div class="criteria">
-            <li id="low-cost-button"><i class="fa-solid fa-money-bill-wave"></i> Low cost</li>
-            <li><i class="fa-solid fa-child-reaching"></i> Family-friendly</li>
-            <li id="romantic-button"><i class="fa-solid fa-heart"></i> Romantic</li>
-            <li><i class="fa-solid fa-dog"></i> Pets allowed</li>
-        </div>
-    </ul>
+    <div class="filters">
+        <h3>Filters</h3>
+            <div class="criteria">
+                <p id="low-cost-button"><i class="fa-solid fa-money-bill-wave"></i> Low cost</p>
+                <p id="family-friendly-button"><i class="fa-solid fa-child-reaching"></i> Family-friendly</p>
+                <p id="romantic-button"><i class="fa-solid fa-heart"></i> Romantic</p>
+                <p id="pats-allowed-button"><i class="fa-solid fa-dog"></i> Pets allowed</p>
+            </div>
+    </div>  
     <div class="extra-info">
         <i class="fa-solid fa-circle-info fa-xl"></i>
         <p>More than 500 accommodation options are available in this city</p>
     </div>
-</section>
 </header>
 
 <!-- First part of the main website: 6 accommodation options in Marseille -->
@@ -65,8 +63,9 @@
                 <h2 id="accommodation_title">Accommodation in Marseille</h2>
             </div>
             <div class="accommodation-options">
-                <a href="#">
+                
                 <div class="accommodation-card">
+                    <a href="#">
                     <img id="auberge_la_cannebiere" src="images/hebergements/4_small/auberge_la_cannebiere_s.jpg" alt="Photo of bedroom in Auberge la Cannebière">
                     <div class="accommodation-card-text">
                         <h3>Auberge la Cannebière</h3>
@@ -79,11 +78,11 @@
                                 <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
-                </a>
-            </div>
+                    </a>
+                </div>
 
-                <a href="#">
                 <div class="accommodation-card">
+                    <a href="#">
                     <img id="hotel_du_port" src="images/hebergements/4_small/hotel_du_port_s.jpg" alt="Photo of bedroom in Hôtel du port">
                     <div class="accommodation-card-text">
                         <h3>Hôtel du Port</h3>
@@ -96,11 +95,11 @@
                                 <i class="fa-solid fa-star star-full"></i>
                             </div>
                     </div>
-                </a>
+                    </a>
                 </div>
-
-                <a href="#">
+  
                 <div class="accommodation-card">
+                    <a href="#">
                     <img id="les_mouettes" src="images/hebergements/4_small/les_mouettes_s.jpg" alt="Photo of bedroom in Les mouettes Hotel">
                     <div class="accommodation-card-text">
                         <h3>Les Mouettes Hotel</h3>
@@ -113,11 +112,11 @@
                                 <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
-                </a>
+                    </a>
                 </div>
 
-                <a href="#">
                 <div class="accommodation-card">
+                    <a href="#">
                     <img id="hotel_de_la_mer" src="images/hebergements/4_small/hotel_de_la_mer_s.jpg" alt="Photo of bedroom in Hôtel de la mer">
                     <div class="accommodation-card-text">
                         <h3>Hôtel de la Mer</h3>
@@ -130,11 +129,11 @@
                                 <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
-                </a>
+                    </a>
                 </div>
 
-                <a href="#">
                 <div class="accommodation-card">
+                    <a href="#">
                     <img id="auberge_le_panier" src="images/hebergements/4_small/auberge_le_panier_s.jpg" alt="Photo of bedroom in Auberge Le Panier">
                     <div class="accommodation-card-text">
                         <h3>Auberge Le Panier</h3>
@@ -147,11 +146,11 @@
                                 <i class="fa-solid fa-star star-empty"></i>
                             </div>
                     </div>
-                </a>
+                    </a>
                 </div>
 
-                <a href="#">
                 <div class="accommodation-card">
+                    <a href="#">
                     <img id="hotel_chez_amina" src="images/hebergements/4_small/hotel_chez_amina_s.jpg" alt="Photo of bedroom in Hôtel chez Amina">
                     <div class="accommodation-card-text">
                         <h3>Hôtel chez Amina</h3>
@@ -164,13 +163,14 @@
                                 <i class="fa-solid fa-star star-full"></i>
                             </div>
                     </div>
-                </a>
+                    </a>
                 </div>
             </div>
 
             <div>
-                <h2><a href="#">Show More</a></h2></div>
+                <h2><a href="#">Show More</a></h2>
             </div>
+        </div>
     
 <!-- Second part of the main website - to the side of the first on desktop: 3 of the most popular hotels in Marseille -->
     
@@ -238,55 +238,61 @@
     <section class="activities" id="activities">
         <h1 id="activities-title">Activities in Marseille</h1>
         <div class="activities-container">
+
             <div class="activities-column">
-                <a href="#">
                 <div class="activities-card">
+                    <a href="#">
                     <img id="old_port" src="images/activites/4_small/old_port_s.jpg" alt="Photo of Old Port">
                     <h3>Old Port</h3>
-                </a>
+                    </a>
                 </div>
             </div>
+
             <div class="activities-column-double">
-                <a href="#">
                 <div class="activities-card">
+                    <a href="#">
                     <img id="pomegues_port" src="images/activites/4_small/pomegues_fort_s.jpg" alt="Photo of Pomègues Port">
                     <h3>Pomègues Port</h3>
-                </a>
+                    </a>
                 </div>
-                <a href="#">
                 <div class="activities-card">
+                    <a href="#">
                     <img id="frioul_island" src="images/activites/4_small/frioul_island_s.jpg" alt="Photo of Frioul Island">
                     <h3>Frioul Island</h3>
-                </a>
+                    </a>
                 </div>
             </div>
+
             <div class="activities-column">
-                <a href="#">
                 <div class="activities-card">
+                    <a href="#">
                     <img id="calanques_national_park" src="images/activites/4_small/calanques_s.jpg" alt="Photo of Calanques National Park">
                     <h3>Calanques National Park</h3>
-                </a>
+                    </a>
                 </div>
             </div>
+
             <div class="activities-column-double">
-                <a href="#">
                 <div class="activities-card">
+                    <a href="#">
                     <img id="notre_dame" src="images/activites/4_small/notre_dame_s.jpg" alt="Photo of Notre Dame de la Garde">
                     <h3>Notre Dame de la Garde</h3>
-                </a>
+                    </a>
                 </div>
-                <a href="#">
+                
                 <div class="activities-card">
+                    <a href="#">
                     <img id="longchamp_park" src="images/activites/4_small/longchamp_park_s.jpg" alt="Photo of Longchamp Park">
                     <h3>Longchamp Park</h3>
-                </a>
+                    </a>
                 </div>
             </div>
         </div>
+    </section>
     </main>
 
     <footer>
-        </section class="footer">
+        <section class="footer">
             <div class="footer-flex-container">
                 <div class="footer-column">
                     <h2>About</h2>

@@ -157,7 +157,7 @@ form input {
   align-items: center;
 }
 
-.filters ul {
+.filters {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -178,7 +178,15 @@ form input {
   padding: 10px;
 }
 
-.criteria li {
+/* .criteria li {
+  margin-right: 30px;
+  border: 3px solid #F2F2F2;
+  border-radius: 30px;
+  height: 60px;
+  padding: 0 20px 20px 0;
+} */
+
+.criteria p {
   margin-right: 30px;
   border: 3px solid #F2F2F2;
   border-radius: 30px;
@@ -186,17 +194,35 @@ form input {
   padding: 0 20px 20px 0;
 }
 
- .criteria li a {
+ /* .criteria li a {
+  text-decoration: none;
+  color: black;
+  text-align: end;
+ } */
+
+ .criteria p a {
   text-decoration: none;
   color: black;
   text-align: end;
  }
 
- .criteria li:hover {
+ /* .criteria li:hover {
+  background-color: #DEEBFF;
+ } */
+
+ .criteria p:hover {
   background-color: #DEEBFF;
  }
 
-.criteria li i {
+/* .criteria li i {
+  color:#0065FC;
+  background-color: #DEEBFF;
+  padding: 20px;
+  border-radius: 50px;
+  overflow: visible;
+} */
+
+.criteria p i {
   color:#0065FC;
   background-color: #DEEBFF;
   padding: 20px;
@@ -556,7 +582,7 @@ h2 a:hover {
   .mobile-search-button {
     display: flex;
 }
-  .criteria li {
+  .criteria p {
     margin-bottom: 20px;
   }
 
