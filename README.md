@@ -1,1 +1,1 @@
-git@github.com:GeorginaMudditt/Booki_Accom-Activities.git
+https://georginamudditt.github.io/Booki_Accom-Activities/
