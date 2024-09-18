@@ -1,1 +1,1 @@
-https://georginamudditt.github.io/P2_Mudditt_code/
+git@github.com:GeorginaMudditt/Booki_Accom-Activities.git
